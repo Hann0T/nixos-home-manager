@@ -34,6 +34,11 @@
     pkgs.drumgizmo
     pkgs.ardour
 
+    # dev
+    pkgs.php82Packages.composer
+    pkgs.nodejs
+    pkgs.go
+
     (pkgs.nerdfonts.override { fonts = [ "Mononoki" ]; })
 
     # # You can also create simple shell scripts directly inside your
@@ -98,7 +103,6 @@
     enable = true;
     userName = "hann0t";
     userEmail = "hansolivas1@gmail.com";
-    defaultBranch = "main";
   };
 
   programs.starship.enable = true;
