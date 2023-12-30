@@ -35,6 +35,7 @@
     pkgs.ardour
 
     # dev
+    pkgs.php
     pkgs.php82Packages.composer
     pkgs.nodejs
     pkgs.go
@@ -109,6 +110,74 @@
 
   programs.alacritty = {
     enable = true;
+    settings = {
+      window = {
+        dimensions = {
+	  columns = 120;
+	  lines = 30;
+	};
+	padding = {
+	  x = 5;
+	  y = 0;
+	};
+	dynamic_padding = false;
+	decorations = "full";
+	startup_mode = "Windowed";
+      };
+      scrolling = {
+        history = 10000;
+	multiplier = 3;
+      };
+      custom_cursor_colors = true;
+      colors = {
+	primary = {
+	  background = "#282c34";
+	  foreground = "#bbc2cf";
+	};
+	cursor = {
+	  cursor = "#4CA6E3";
+	  text = "#BABABA";
+	};
+	normal = {
+	  black = "#3E4556";
+          red = "#E56160";
+          green = "#88AB5A";
+          yellow = "#D4AB6E";
+          blue = "#4CA6E3";
+          magenta = "#c678dd";
+          cyan = "#3FC3E5";
+          white = "#DFDFD9";
+	};
+	bright = {
+	  black = "#5B6268";
+          red = "#ff6c6b";
+          green = "#98be65";
+          yellow = "#ECBE7B";
+          blue = "#51afef";
+          magenta = "#a9a1e1";
+          cyan = "#46D9FF";
+          white = "#F8F8F2";
+	};
+      };
+      window = {
+        opacity = 0.95;
+      };
+      font = {
+        normal = {
+	  family = "Mononoki Nerd Font Mono";
+	  style = "Regular";
+	};
+        bold = {
+	  family = "Mononoki Nerd Font Mono";
+	  style = "Bold";
+	};
+        italic = {
+	  family = "Mononoki Nerd Font Mono";
+	  style = "Italic";
+	};
+	size = 14.0;
+      };
+    };
   };
 
   programs.neovim = {
