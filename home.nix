@@ -15,6 +15,10 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
+  home.sessionPath = [
+    "/home/hann0t/.local/bin"
+  ];
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
@@ -33,12 +37,14 @@
     pkgs.x42-avldrums
     pkgs.drumgizmo
     pkgs.ardour
+    pkgs.zynaddsubfx
 
     # dev
     pkgs.php
     pkgs.php82Packages.composer
     pkgs.nodejs
     pkgs.go
+    pkgs.gopls
 
     (pkgs.nerdfonts.override { fonts = [ "Mononoki" ]; })
 
