@@ -30,6 +30,7 @@
     pkgs.ripgrep
     pkgs.fzf
     pkgs.eza
+    pkgs.fd
 
     # music
     pkgs.lsp-plugins
@@ -40,6 +41,7 @@
     pkgs.zynaddsubfx
 
     # dev
+    # (pkgs.php.buildEnv { extraConfig = "memory_limit = 1G"; })
     pkgs.php
     pkgs.php82Packages.composer
     pkgs.nodejs
@@ -97,7 +99,7 @@
     enable = true;
     interactiveShellInit = ''
         set fish_greeting # Disable greeting
-	alias ls="eza -al --color=always --group-directories-first"
+	alias ls="eza -alg --color=always --group-directories-first"
 	alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 	alias pa ="php artisan"
 	alias sa ="sail artisan"
