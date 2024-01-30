@@ -30,7 +30,10 @@
     pkgs.ripgrep
     pkgs.fzf
     pkgs.eza
+    pkgs.bat
     pkgs.fd
+    pkgs.file
+    pkgs.moreutils
 
     # music
     pkgs.lsp-plugins
@@ -47,6 +50,9 @@
     pkgs.nodejs
     pkgs.go
     pkgs.gopls
+
+    pkgs.lutris-free
+    pkgs.wine
 
     (pkgs.nerdfonts.override { fonts = [ "Mononoki" ]; })
 
