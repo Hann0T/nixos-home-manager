@@ -34,6 +34,9 @@
     pkgs.fd
     pkgs.file
     pkgs.moreutils
+    pkgs.bc
+    pkgs.macchanger
+    pkgs.nmap
 
     # music
     pkgs.lsp-plugins
