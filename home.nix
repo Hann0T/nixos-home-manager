@@ -37,6 +37,14 @@
     pkgs.bc
     pkgs.macchanger
     pkgs.nmap
+    pkgs.tcpdump
+    pkgs.lsof
+    pkgs.arp-scan
+    pkgs.masscan
+    pkgs.gobuster
+    pkgs.seclists
+    pkgs.wfuzz
+    pkgs.whatweb
 
     # music
     pkgs.lsp-plugins
@@ -54,6 +62,7 @@
     pkgs.go
     pkgs.gopls
 
+    pkgs.wireshark
     pkgs.lutris-free
     pkgs.wine
 
