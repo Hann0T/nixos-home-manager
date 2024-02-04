@@ -45,6 +45,13 @@
     pkgs.seclists
     pkgs.wfuzz
     pkgs.whatweb
+    pkgs.ffuf
+    pkgs.exiftool
+    pkgs.inetutils
+    pkgs.wget
+    pkgs.thc-hydra
+    pkgs.openssl
+    pkgs.sslscan
 
     # music
     pkgs.lsp-plugins
@@ -63,6 +70,7 @@
     pkgs.gopls
 
     pkgs.wireshark
+    # pkgs.burpsuite
     pkgs.lutris-free
     pkgs.wine
 
