@@ -19,6 +19,9 @@
     "/home/hann0t/.local/bin"
   ];
 
+  # allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
@@ -52,6 +55,10 @@
     pkgs.thc-hydra
     pkgs.openssl
     pkgs.sslscan
+    pkgs.samba
+    pkgs.smbmap
+    pkgs.exploitdb
+    pkgs.wpscan
 
     # music
     pkgs.lsp-plugins
@@ -70,7 +77,7 @@
     pkgs.gopls
 
     pkgs.wireshark
-    # pkgs.burpsuite
+    pkgs.burpsuite
     pkgs.lutris-free
     pkgs.wine
 
