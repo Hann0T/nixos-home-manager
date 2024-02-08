@@ -54,10 +54,15 @@
     pkgs.wget
     pkgs.thc-hydra
     pkgs.openssl
+    pkgs.netcat-gnu
     pkgs.sslscan
     pkgs.samba
     pkgs.smbmap
     pkgs.exploitdb
+    pkgs.joomscan
+    pkgs.ascii
+    pkgs.wine
+    # unfree
     pkgs.wpscan
 
     # music
@@ -75,11 +80,15 @@
     pkgs.nodejs
     pkgs.go
     pkgs.gopls
+    pkgs.python3
+    pkgs.python311Packages.pip
 
+    pkgs.firefox
     pkgs.wireshark
-    pkgs.burpsuite
+    pkgs.virtualbox
     pkgs.lutris-free
-    pkgs.wine
+    # unfree
+    pkgs.burpsuite
 
     (pkgs.nerdfonts.override { fonts = [ "Mononoki" ]; })
 
